@@ -81,7 +81,14 @@ font-size: 2em;
 color: white;
 text-decoration: none;
 line-height: 4em;
-transition: all 500ms;
+display: inline-block;
+}
+
+
+
+
+
+
 }
 
 a:hover {
