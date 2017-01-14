@@ -24,7 +24,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -49,7 +49,7 @@ table {
 /*____________________________________________________________________________________________*/
 
 body {
-  background: black;
+  background: #000000;
   color: white;
   font-family: "Oxygen", Helvetica, Sans-Serif;
   z-index: 1;
@@ -61,7 +61,19 @@ body {
 
 h1 {
   font-size: 2em; 
-  margin-top: 1.2em;
+  margin-top: .5em;
+}
+
+p {
+ font-size: .8em;
+ line-height: 1.4375em;
+}
+
+#container {
+  position: relative;
+  width: 95%;  
+  margin: 0 auto;  
+  text-align: center;
 }
 
 #leftCol, #rightCol{
@@ -245,30 +257,6 @@ footer {
   height: 2.5em;
 }
 
-p {
- font-size: .8em;
- line-height: 1.4375em;
-}
-
-#menuBox {
-  border: 2px solid white;
-  border-radius: 2px;
-  margin-top: 2em;
-  display: inline-block;
-  padding: 1.5em 6.5%;
-  position: fixed;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
-}
-
-a {
-font-size: 2em;
-color: white;
-text-decoration: none;
-line-height: 4em;
-display: block;
-}
 
 
 
@@ -277,139 +265,20 @@ display: block;
 
 
 
-a:hover {
-color: cyan;
-transition: all 500ms;
-}
-
-
-#objMargin {
-  margin-top: 4.5em;
-}
-
-h2 {
-  font-size: 1.75em;
-}
-
-#container {
-  position: relative;
-  width: 95%;  
-  margin: 0 auto;  
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-  margin-top: .35em;
-}
-
-#formBox {
- margin-top: 2em;
-}
-
-#colOne {
- margin-top: 2.75em;
-}
-
-#colTwo {
- margin-top: 3em;
-}
-
-#colThree {
- margin-top: 3em;	
- margin-bottom: .6em;
-}
-
-.carNumberInput {
-  font-family: "Oxygen", Helvetica, Sans-Serif;
-  width: 12%;
-  border: 4px solid white;
-  background: black;
-  border-radius: 0.25em;
-  resize: none;
-  margin-top: .15em;
-  margin-bottom: .15em;
-  text-align: center;
-  margin-left: .83%;
-  margin-right: .83%;
-}
-
-
-.carNumberInput {
-  color: white;
-  font-size: 5.5em;
-}
-
-::-webkit-input-placeholder { 
-  color:    white;
-}
-:-moz-placeholder { 
-  color:    white;
-  opacity:  1;
-}
-::-moz-placeholder { 
-  color:    white;
-  opacity:  1;
-}
-:-ms-input-placeholder { 
-  color:    white;
-}
-:placeholder-shown { 
-  color:    white;
-}
-
-[placeholder]:focus::-webkit-input-placeholder {
-  transition: opacity .75s .75s ease-in-out; 
-  opacity: 0;
-  color: orange !important;
-}
-
-.carNumberInput:focus{
-  color: white;
-  border: 4px solid orange !important;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out; 
-}
-
-input:focus{
-  outline: 0;
-}
-
-.carNumberInput:-webkit-autofill {
-  box-shadow: 0 0 0px 1000px black inset;
-  -webkit-text-fill-color: white;
-}
-
-#btn {
-  font-family: "Oxygen", Helvetica, Sans-Serif;
-  color: #eee;
-  font-size: 1em;
-  text-decoration: none;
-  border-radius: 0.25em;
-  border: .175em solid white;
-  padding: 0.15em 1.5% 0.265em 1.5%;
-  display: inline-block;
-  background: linear-gradient(#0A6AFB,#121212);
-  margin-top: 1em;
-  margin-bottom: .6em;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out; 
-}
-
-#btn:hover {
-  border: 0.175em solid orange; 
-  color: white;
-  transition: all 700ms;
-  cursor: pointer;
-}
-  
 
 
 
 
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
