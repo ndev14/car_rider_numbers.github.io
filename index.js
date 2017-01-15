@@ -1,3 +1,7 @@
+$(function() {
+    $('body').removeClass('fade-out');
+});
+
 var input = $( "input:reset" ).css({
 });
 $( "#formBox" ).submit(function( event ) {
