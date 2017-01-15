@@ -47,67 +47,170 @@ table {
 }
 /*/*__END RESET__*/ 
 /*____________________________________________________________________________________________*/
+*,*:before,*:after {
+box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
 
 body {
-  background: #000000;
+  background: black;
   color: white;
-  font-family: "Oxygen", Helvetica, Sans-Serif;
-  z-index: 1;
+  font-family: 'Lato', sans-serif;
+  opacity: 1;
+  transition: 500ms opacity;
 }
 
-*,*:before,*:after {
-  box-sizing: border-box;
+body.fade-out {
+  opacity: 0;
+  transition: none;
 }
 
-/*Menu Box*/
+.container {
+  width: 95%;
+  margin: auto;
+}
 
-#menuBox {
-  border: 2px solid white;
-  border-radius: 2px;
-  margin-top: 2em;
+/*Splash Screen*/
+
+#splashHeader {
+  margin-top: 1em;
+}
+
+#appNameHeader{
+  float: left;
+  font-size: .9em;
+  margin-left: 3%;
+}
+
+#helpIconHeader {
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  width: 1.1em;
+  height: 1.1em;
+  float: right;
+  margin-right: 3%;
+}
+
+#helpIconHeader {
+  font-size: 1.2em; 
   display: inline-block;
-  padding: 1.5em 8%;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; 
+}
+
+#helpIconHeader:hover {
+  color: cyan;
+  border: 1px solid cyan;
+  transition: all 500ms ease-in-out;
+}
+
+#splashBox {
+  text-align: center;
   position: fixed;
   left: 50%;
-  top: 45%;
+  top: 40%;
   transform: translate(-50%, -50%);
+  width: 90%;
 }
 
-a {
-font-size: 2em;
-color: white;
-text-decoration: none;
-line-height: 4em;
-transition: all 500ms;
+#appLogo {
+  margin-bottom: .30em;
+  background: cyan;
+  font-size: 4em;
+  padding: .5%;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 2px;
+  color: white;
 }
 
-a:hover {
-color: cyan;
-transition: all 500ms;
+#buttonContainer {
+  display:block;
 }
 
-/*Bus Dismissal Styles*/
-h1 {
-  font-size: 2em; 
-  margin-top: .5em;
+#buttonContainer a, #resetButton {
+  color: #eee;
+  font-size: .9em;
+  text-decoration: none;
+  padding: .25em 1%;
+  border: 0.135em solid white;
+  border-radius: 0.25em;
+  display: inline-block;
+  margin: .70em;
+  background: linear-gradient(#9cbbe8,#121212);
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+}
+
+#buttonContainer a:hover, #resetButton:hover {
+  border: 0.135em solid cyan; 
+  color: white;
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+}
+
+#footerLogo {
+  color: cyan;
+  text-align: center;
+  height: 2em;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/*Bus Dismissal Section*/
+
+.busHomeIcon, .carHomeIcon{ 
+  position: absolute;
+  margin-top: .3em;
+  color: white;
+  font-size: 1.5em;
+}
+
+.carHomeIcon {
+  margin-left: 5%;
+}
+
+.busHomeIcon {
+  margin-left: 7%;
+}
+
+.busHomeIcon:hover, .carHomeIcon:hover {
+  color: cyan;
+  transition: all 500ms ease-in-out;
+}
+
+.mainHeader {
+  margin-top: 1.5em;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
 }
 
 p {
- font-size: .8em;
- line-height: 1.4375em;
-}
-
-#container {
-  position: relative;
-  width: 95%;  
-  margin: 0 auto;  
-  text-align: center;
+  font-size: .8em;
+  line-height: 1.4375em;
 }
 
 #leftCol, #rightCol{
   display: inline-block;
-  margin-top: 1em;
+  margin: 1em 1%;
   width: 47.5%;
+  text-align: center;
 }
 
 .screen {
@@ -122,7 +225,7 @@ p {
   display:none;
   text-align: center;
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -70%);
   transition: background-color ease 1s;	
 }
 
@@ -285,8 +388,6 @@ footer {
   height: 2.5em;
 }
 
-
-
 /*Car Dismissal Styles*/
 
 #objMargin {
@@ -297,31 +398,19 @@ h2 {
   font-size: 1.75em;
 }
 
-#container {
-  position: relative;
-  width: 95%;  
-  margin: 0 auto;  
-  text-align: center;
-}
-
-h1 {
-  text-align: center;
-  margin-top: .35em;
-}
-
 #formBox {
- margin-top: 2em;
+ text-align: center;
 }
 
-#colOne {
+#rowOne {
  margin-top: 2.75em;
 }
 
-#colTwo {
+#rowTwo {
  margin-top: 3em;
 }
 
-#colThree {
+#rowThree {
  margin-top: 3em;	
  margin-bottom: .6em;
 }
@@ -388,57 +477,8 @@ input:focus{
   -webkit-text-fill-color: white;
 }
 
-#btn {
-  font-family: "Oxygen", Helvetica, Sans-Serif;
-  color: #eee;
-  font-size: 1em;
-  text-decoration: none;
-  border-radius: 0.25em;
-  border: .175em solid white;
-  padding: 0.15em 1.5% 0.265em 1.5%;
-  display: inline-block;
-  background: linear-gradient(#0A6AFB,#121212);
-  margin-top: 1em;
-  margin-bottom: .6em;
-  -webkit-transition: all 700ms ease-in-out;
-  -moz-transition: all 700ms ease-in-out;
-  -o-transition: all 700ms ease-in-out;
-  transition: all 700ms ease-in-out; 
+#resetButton {
+  margin-left: 47.5%;
 }
 
-#btn:hover {
-  border: 0.175em solid orange; 
-  color: white;
-  transition: all 700ms;
-  cursor: pointer;
-}
   
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
