@@ -1,55 +1,62 @@
 <!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1”/>
-  <link rel="icon" href="images/yellown.ico" type="image/x-icon"/>
-  <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  <title>Car Numbers</title>
-</head>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Car Dismissal</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
 <body>
 
-<h1>When you see your number report to the car lane</h1>
-<div id=container>
+<script>document.body.className += ' fade-out';</script>
+
+<div class="mainHeader">
+  <a class="carHomeIcon" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>      
+  <div class="title">When you see your number report to the car lane</div>
+</div>
+
+<div class="container">
 
 <form>      
-<div id="formBox">            
-<div id=colOne>
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">              
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">             
-<input type="text" class="carNumberInput">     
+  <div id="formBox">            
+    <div id=rowOne>
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">              
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">             
+      <input type="text" class="carNumberInput">     
+    </div>
+
+    <div id=rowTwo>
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">              
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">             
+      <input type="text" class="carNumberInput">             
+    </div>
+
+    <div id=rowThree>
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">              
+      <input type="text" class="carNumberInput">   
+      <input type="text" class="carNumberInput">             
+      <input type="text" class="carNumberInput">             
+    </div>
 </div>
 
-<div id=colTwo>
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">              
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">             
-<input type="text" class="carNumberInput">             
-</div>
-
-<div id=colThree>
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">              
-<input type="text" class="carNumberInput">   
-<input type="text" class="carNumberInput">             
-<input type="text" class="carNumberInput">             
-</div>
-</div> 
-
-<input type="reset" id="btn">
+<input type="reset" id="resetButton">
 </form> 
+</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script src="script.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+<script src="index.js"></script>
 </body>
 </html>
