@@ -433,6 +433,10 @@ h2 {
   text-align: center;
   margin-left: .83%;
   margin-right: .83%;
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out; 
 }
 
 
