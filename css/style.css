@@ -215,7 +215,7 @@ p {
 }
 
 .screen {
-  height: 30em;
+  height: 28.5em;
 }
 
 #leftDisplay, #midDisplay, #rightDisplay {
@@ -231,17 +231,17 @@ p {
 }
 
 #leftDisplay {
-    top: 39.5%;
+    top: 65.5%;
     left: 18.35%;
 }
 
 #midDisplay {
-  top: 39.5%;
+  top: 65.5%;
   left: 50%;
 }
 
 #rightDisplay {
-  top: 39.5%;
+  top: 65.5%;
   left: 81.5%;
 }
 
