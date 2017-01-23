@@ -215,13 +215,13 @@ p {
 }
 
 .screen {
-  height: 28em;
+  height: 26em;
 }
 
 #leftDisplay, #midDisplay, #rightDisplay {
     margin: 0;
     padding: 0;
-    height: 25em;
+    height: 21em;
     width: 29%;
     display: none;
     text-align: center;
