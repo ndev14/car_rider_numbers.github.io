@@ -123,7 +123,7 @@ p {
 #leftDisplay, #rightDisplay{
   margin:0;
   padding: 0;
-  height: 23em;
+  height: 21em;
   width: 45%;
   display:none;
   text-align: center;
@@ -133,12 +133,12 @@ p {
 }
 
 #leftDisplay {
-  top: 66%;
+  top: 58%;
   left: 26%;
 }
 
 #rightDisplay {
-  top: 66%;
+  top: 58%;
   left: 74%;
 }
 
