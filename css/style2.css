@@ -95,10 +95,6 @@ body.fade-out {
   transition: all 500ms ease-in-out;
 }
 
-.mainHeader {
-  margin-top: 1.5em;
-}
-
 .title {
   font-size: 2em;
   text-align: center;
@@ -117,7 +113,7 @@ p {
 }
 
 .screen {
-  height: 22.5em;
+  height: 29.5em;
 }
 
 #leftDisplay, #rightDisplay{
