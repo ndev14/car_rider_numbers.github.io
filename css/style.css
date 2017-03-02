@@ -189,10 +189,6 @@ width: 95%;
   transition: all 500ms ease-in-out;
 }
 
-.mainHeader {
-  margin-top: .25em;
-}
-
 .title {
   font-size: 2em;
   text-align: center;
