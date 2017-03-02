@@ -393,10 +393,7 @@ h2 {
 
 .formBox {
  text-align: center;
-}
-
-.formRow {
-	1.3em;
+	margin-top: 2em;
 }
 
 .carNumberInput {
