@@ -184,17 +184,13 @@ width: 95%;
   margin-left: 5%;
 }
 
-.busHomeIcon {
-  margin-left: 4%;
-}
-
 .busHomeIcon:hover, .carHomeIcon:hover {
   color: cyan;
   transition: all 500ms ease-in-out;
 }
 
 .mainHeader {
-  margin-top: 1.5em;
+  margin-top: .25em;
 }
 
 .title {
@@ -215,13 +211,13 @@ p {
 }
 
 .screen {
-  height: 28em;
+  height: 30em;
 }
 
 #leftDisplay, #midDisplay, #rightDisplay {
     margin: 0;
     padding: 0;
-    height: 21em;
+    height: 27em;
     width: 29%;
     display: none;
     text-align: center;
