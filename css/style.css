@@ -395,16 +395,8 @@ h2 {
  text-align: center;
 }
 
-#rowOne {
- margin-top: 2.75em;
-}
-
-#rowTwo {
- margin-top: 3em;
-}
-
-#rowThree {
- margin-top: 3em;	
+.formRow {
+	2.5em;
 }
 
 .carNumberInput {
