@@ -175,13 +175,8 @@ width: 95%;
 
 .busHomeIcon, .carHomeIcon{ 
   position: absolute;
-  margin-top: .3em;
   color: white;
-  font-size: 1em;
-}
-
-.carHomeIcon {
-  margin-left: 5%;
+  font-size: .75em;
 }
 
 .busHomeIcon:hover, .carHomeIcon:hover {
