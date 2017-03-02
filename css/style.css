@@ -217,7 +217,7 @@ p {
 #leftDisplay, #midDisplay, #rightDisplay {
     margin: 0;
     padding: 0;
-    height: 27em;
+    height: 35em;
     width: 29%;
     display: none;
     text-align: center;
@@ -227,7 +227,7 @@ p {
 }
 
 #leftDisplay {
-    top: 64%;
+    top: 66%;
     left: 18.35%;
 }
 
