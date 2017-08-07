@@ -264,14 +264,15 @@ p {
   transition: all 500ms;
 }
 
+
 .desButton {
-  background: #009900;
+  background: cyan;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
 .nurseryButton {
-  background: #654321;
+  background: green;
   border: 0.2em solid white;
   border-radius: 2em;
 }
@@ -283,9 +284,10 @@ p {
 }
 
 .carRiderButton {
-  background: #00cccc;  
+  background: white  ;  
   border: 0.2em solid white;
   border-radius: 2em;
+  color: black;
 }
 
 .twoThreeButton {
@@ -306,44 +308,38 @@ p {
   border-radius: 2em;
 }
 
-.bus759Button {
-  background: #cbb299;
+.bus722Button {
+  background: Blue;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus697Button {
-  background: #660000;
+.bus734Button {
+  background:silver;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus782Button {
+.bus714Button {
   background: #e5e500; 
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
+.bus785Button {
+  background:pink; 
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus826Button {
+  background: tan;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
 .bus901Button {
-  background: #ff0000; 
-  border: 0.2em solid white;
-  border-radius: 2em;
-}
-
-.bus762Button {
-  background: #3333ff;
-  border: 0.2em solid white;
-  border-radius: 2em;
-}
-
-.bus743Button {
-  background: #c0c0c0;  
-  border: 0.2em solid white;
-  border-radius: 2em;
-}
-
-.bus751Button {
-  background: #ffc0cb;  
+  background: red;  
   border: 0.2em solid white;
   border-radius: 2em;
 }
@@ -353,6 +349,7 @@ p {
   border: 0.2em solid white;
   border-radius: 2em;
 }
+
 
 .leftButtons, .midButtons, .rightButtons {
     width: 5.6%;
@@ -367,6 +364,8 @@ p {
     display: inline-block;
     transition: all 150ms ease-in-out;
 }
+
+.leftButtonsBlack 
 
 .leftButtons:focus, .midButtons:focus, .rightButtons:focus {
   outline: none;
