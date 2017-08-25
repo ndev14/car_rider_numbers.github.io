@@ -137,7 +137,7 @@ width: 95%;
   display:block;
 }
 
-#buttonContainer a, #resetButton {
+#buttonContainer a {
   color: #eee;
   width: 17%;
   font-size: .9em;
@@ -154,8 +154,21 @@ width: 95%;
   transition: all 700ms ease-in-out;
 }
 
-#resetButton a{
+#resetButton {
+  color: #eee;
   width: 7%;
+  font-size: .9em;
+  text-decoration: none;
+  padding: .25em 1% .4em 1%;
+  border: 0.16em solid white;
+  border-radius: 0.25em;
+  display: inline-block;
+  margin: .70em;
+  background: linear-gradient(#9cbbe8,#121212);
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 
 #buttonContainer a:hover, #resetButton:hover {
