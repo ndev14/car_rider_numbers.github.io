@@ -154,6 +154,10 @@ width: 95%;
   transition: all 700ms ease-in-out;
 }
 
+#buttonContainer a, #resetButton {
+  width: 7%;
+}
+
 #buttonContainer a:hover, #resetButton:hover {
   border: 0.16em solid cyan; 
   color: white;
