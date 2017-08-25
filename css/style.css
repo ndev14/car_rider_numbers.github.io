@@ -154,7 +154,7 @@ width: 95%;
   transition: all 700ms ease-in-out;
 }
 
-#buttonContainer a, #resetButton {
+#resetButton {
   width: 7%;
 }
 
