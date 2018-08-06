@@ -302,10 +302,10 @@ p {
 }
 
 .carRiderButton {
-  background: white  ;  
+  background: #FC03D2  ;  
   border: 0.2em solid white;
   border-radius: 2em;
-  color: black;
+  color: white;
 }
 
 .twoThreeButton {
@@ -320,44 +320,50 @@ p {
   border-radius: 2em;
 }
 
-.finalCallButton {
+.fc1Button {
   background: #000000;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus722Button {
-  background: Blue;
+.fc2Button {
+  background: #000000;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus734Button {
-  background:silver;
+.bus309Button {
+  background: red;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus714Button {
-  background: #e5e500; 
+.bus307Button {
+  background:pink;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus785Button {
-  background:pink; 
+.bus306Button {
+  background: silver; 
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus826Button {
+.bus305Button {
+  background: darkblue; 
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus308Button {
   background: tan;
   border: 0.2em solid white;
   border-radius: 2em;
 }
 
-.bus901Button {
-  background: red;  
+.bus304Button {
+  background: yellow;  
   border: 0.2em solid white;
   border-radius: 2em;
 }
