@@ -2,32 +2,102 @@
 <html >
   <head>
     <meta charset="UTF-8">
-    <title>Main Menu</title>
+    <title>Silent Dismissal</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
 
-<script>document.body.className += ' fade-out';</script>
+<script>document.body.className += 'fade-out';</script>
 
-<div id="splashHeader">
-  <p id="appNameHeader">Silent Dismissal System</p>
-  <div id = "helpIconHeader">?</div>
-</div>   
-
-<div id="container"> 
-  <div id="splashBox">  
-    <div id = "appLogo">SDS</div>  
-      <div id="buttonContainer">    
-        <a href="bus.html">Bus Dismissal</a>  
-        <a href="car.html">Car Dismissal</a>
-      </div>    
-  </div>
+<div class="mainHeader">
+    <a class="busHomeIcon" href="index.html"><i class="fa fa-home" aria-hidden="true"></i></a>      
+    <div class="title"></div>
 </div>
 
-<p id="footerLogo">ndev</p>
+<div class="container"> 
+    <div id="leftDisplay">
+        <button class="leftClose">X</button>
+        <h2 id="leftH2"></h2>
+    </div>
+  
+    <div id="midDisplay">
+        <button class="midClose">X</button>
+        <h2 id="midH2"></h2>
+    </div>
+
+    <div id="rightDisplay">
+        <button class="rightClose">X</button>
+        <h2 id="rightH2"></h2>
+    </div>
+   
+<div id= "leftCol">       
+    <div class="screen"></div>    
+        <div id="leftNav">  
+            <button class="desButton leftButtons" data-display='{"text":"DES Bus Riders", "background":"desButton"}'>DES</button> 
+            <button class="nurseryButton leftButtons" data-display='{"text":"Nursery Bus Riders", "background":"nurseryButton"}'>NB</button>   
+            <button class="walkersButton leftButtons" data-display='{"text":"Walkers", "background":"walkersButton"}'>Walk</button>   
+            <button class="carRiderButton leftButtons" data-display='{"text":"Car Riders", "background":"carRiderButton"}'>CR</button>   
+            <button class="twoThreeButton leftButtons" data-display='{"text":"2nd and 3rd First Load", "background":"twoThreeButton"}'>2-3</button>    
+            <button class="fourFiveButton leftButtons" data-display='{"text":"4th and 5th First Load", "background":"fourFiveButton"}'>4-5</button>   
+            <button class="fc1Button leftButtons" data-display='{"text":"Final Call for First Load", "background":"fc1Button"}'>FC1</button>
+            <button class="bus309Button leftButtons"  data-display='{"text":"Bus 309", "background":"bus309Button"}'>309</button> 
+            <button class="bus307Button leftButtons"  data-display='{"text":"Bus 307", "background":"bus307Button"}'>307</button>
+            <button class="bus306Button leftButtons"  data-display='{"text":"Bus 306", "background":"bus306Button"}'>306</button>    
+            <button class="bus305Button leftButtons" data-display='{"text":"Bus 305", "background":"bus305Button"}'>305</button>   
+            <button class="bus308Button leftButtons" data-display='{"text":"Bus 308", "background":"bus308Button"}'>308</button>
+            <button class="bus304Button leftButtons" data-display='{"text":"Bus 304", "background":"bus304Button"}'>304</button> 
+            <button class="fc2Button leftButtons" data-display='{"text":"Final Call for Second Load", "background":"fc2Button"}'>FC2</button>
+            <button class="campusKidsButton leftButtons" data-display='{"text":"Campus Kids", "background":"campusKidsButton"}'>CK</button>  
+        </div>
+    </div>
+
+ <div id= "midCol">       
+    <div class="screen"></div>    
+        <div id="midNav">
+            <button class="desButton midButtons" data-display='{"text":"DES Bus Riders", "background":"desButton"}'>DES</button> 
+            <button class="nurseryButton midButtons" data-display='{"text":"Nursery Bus Riders", "background":"nurseryButton"}'>NB</button>   
+            <button class="walkersButton midButtons" data-display='{"text":"Walkers", "background":"walkersButton"}'>Walk</button>   
+            <button class="carRiderButton midButtons" data-display='{"text":"Car Riders", "background":"carRiderButton"}'>CR</button>   
+            <button class="twoThreeButton midButtons" data-display='{"text":"2nd and 3rd First Load", "background":"twoThreeButton"}'>2-3</button>    
+            <button class="fourFiveButton midButtons" data-display='{"text":"4th and 5th First Load", "background":"fourFiveButton"}'>4-5</button>   
+            <button class="fc1Button midButtons" data-display='{"text":"Final Call for First Load", "background":"fc1Button"}'>FC1</button>
+            <button class="bus309Button midButtons"  data-display='{"text":"Bus 309", "background":"bus309Button"}'>309</button> 
+            <button class="bus307Button midButtons"  data-display='{"text":"Bus 307", "background":"bus307Button"}'>307</button>
+            <button class="bus306Button midButtons"  data-display='{"text":"Bus 306", "background":"bus306Button"}'>306</button>    
+            <button class="bus305Button midButtons" data-display='{"text":"Bus 305", "background":"bus305Button"}'>305</button>   
+            <button class="bus308Button midButtons" data-display='{"text":"Bus 308", "background":"bus308Button"}'>308</button>
+            <button class="bus304Button midButtons" data-display='{"text":"Bus 304", "background":"bus304Button"}'>304</button>  
+            <button class="fc2Button midButtons" data-display='{"text":"Final Call for Second Load", "background":"fc2Button"}'>FC2</button>
+            <button class="campusKidsButton midButtons" data-display='{"text":"Campus Kids", "background":"campusKidsButton"}'>CK</button> 
+        </div>
+    </div>                                                                                                                           
+<div id= "rightCol">   
+    <div class="screen"></div>          
+        <div id="rightNav">
+            <button class="desButton rightButtons" data-display='{"text":"DES Bus Riders", "background":"desButton"}'>DES</button> 
+            <button class="nurseryButton rightButtons" data-display='{"text":"Nursery Bus Riders", "background":"nurseryButton"}'>NB</button>   
+            <button class="walkersButton rightButtons" data-display='{"text":"Walkers", "background":"walkersButton"}'>Walk</button>  
+            <button class="carRiderButton rightButtons" data-display='{"text":"Car Riders", "background":"carRiderButton"}'>CR</button>   
+            <button class="twoThreeButton rightButtons" data-display='{"text":"2nd and 3rd First Load", "background":"twoThreeButton"}'>2-3</button>    
+            <button class="fourFiveButton rightButtons" data-display='{"text":"4th and 5th First Load", "background":"fourFiveButton"}'>4-5</button>   
+            <button class="fc1Button rightButtons" data-display='{"text":"Final Call for First Load", "background":"fc1Button"}'>FC1</button>
+            <button class="bus309Button rightButtons"  data-display='{"text":"Bus 309", "background":"bus309Button"}'>309</button> 
+            <button class="bus307Button rightButtons"  data-display='{"text":"Bus 307", "background":"bus307Button"}'>307</button>
+            <button class="bus306Button rightButtons"  data-display='{"text":"Bus 306", "background":"bus306Button"}'>306</button>    
+            <button class="bus305Button rightButtons" data-display='{"text":"Bus 305", "background":"bus305Button"}'>305</button>   
+            <button class="bus308Button rightButtons" data-display='{"text":"Bus 308", "background":"bus308Button"}'>308</button>
+            <button class="bus304Button rightButtons" data-display='{"text":"Bus 304", "background":"bus304Button"}'>304</button>  
+            <button class="fc2Button rightButtons" data-display='{"text":"Final Call for Second Load", "background":"fc2Button"}'>FC2</button>
+            <button class="campusKidsButton rightButtons" data-display='{"text":"Campus Kids", "background":"campusKidsButton"}'>CK</button> 
+        </div>
+    </div>
+</div>
+
+<footer></footer>
 <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
 <script src="js/index.js"></script>
+
 </body>
 </html>
