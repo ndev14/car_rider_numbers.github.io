@@ -1,0 +1,525 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*/*__END RESET__*/ 
+/*____________________________________________________________________________________________*/
+*,*:before,*:after {
+box-sizing: border-box;
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  background: black;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  opacity: 1;
+  transition: 500ms opacity;
+}
+
+body.fade-out {
+  opacity: 0;
+  transition: none;
+}
+
+.container {
+width: 95%;
+    margin: auto;
+}
+
+/*Splash Screen*/
+
+#splashHeader {
+  margin-top: 1em;
+}
+
+#appNameHeader{
+  float: left;
+  font-size: .9em;
+  margin-left: 3%;
+}
+
+#helpIconHeader {
+  text-align: center;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  width: 1.1em;
+  height: 1.1em;
+  float: right;
+  margin-right: 3%;
+}
+
+#helpIconHeader {
+  font-size: 1.2em; 
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; 
+}
+
+#helpIconHeader:hover {
+  color: cyan;
+  border: 1px solid cyan;
+  transition: all 500ms ease-in-out;
+}
+
+#splashBox {
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+}
+
+#appLogo {
+  margin-bottom: .30em;
+  margin-left: 1.45%;
+  background: cyan;
+  font-size: 4em;
+  padding: .5%;
+  display: inline-block;
+  border: 3px solid white;
+  border-radius: 2px;
+  color: white;
+}
+
+#buttonContainer {
+  display:block;
+}
+
+#buttonContainer a {
+  color: yellow;
+  width: 17%;
+  font-size: .9em;
+  text-decoration: none;
+  padding: .4em 1% .4em 1%;
+  border: 0.16em solid white;
+  border-radius: 0.25em;
+  display: inline-block;
+  margin: .70em;
+  background:#434c58;
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+}
+
+
+#buttonContainer a:hover, #resetButton:hover {
+  border: 0.16em solid orange; 
+  color: orange;
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+}
+
+#footerLogo {
+  color: cyan;
+  text-align: center;
+  height: 2em;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+}
+
+/*Bus Dismissal Section*/
+
+.busHomeIcon, .carHomeIcon{ 
+  position: absolute;
+  color: white;
+  font-size: 1em;
+}
+
+.busHomeIcon:hover, .carHomeIcon:hover {
+  color: cyan;
+  transition: all 500ms ease-in-out;
+}
+
+.title {
+  font-size: 2em;
+  text-align: center;
+}
+
+p {
+  font-size: .8em;
+  line-height: 1.4375em;
+}
+
+#leftCol, #midCol, #rightCol{
+    display: inline-block;
+    margin-left: .5%;
+    width: 32.4%;
+    text-align: center;
+}
+
+.screen {
+  height: 30em;
+}
+
+#leftDisplay, #midDisplay, #rightDisplay {
+    margin: 0;
+    padding: 0;
+    height: 28em;
+    width: 29%;
+    display: none;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -70%);
+    transition: background-color ease 1s;
+}
+
+#leftDisplay {
+    top: 63%;
+    left: 18.35%;
+}
+
+#midDisplay {
+  top: 63%;
+  left: 50%;
+}
+
+#rightDisplay {
+  top: 63%;
+  left: 81.5%;
+}
+
+#leftDisplay #leftH2, #midDisplay #midH2, #rightDisplay #rightH2 {
+  font-size: 4.2em;
+  width: 93%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.leftClose, .midClose, .rightClose {
+  color: white;
+  padding: 0 0 1em 9%;
+  font-size: 2em;
+  margin-right: 4.6%;
+  float: right;
+  margin-top: .1em;
+  outline: none;
+  border: none;
+  background: none;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out; 
+}
+
+.leftClose:hover, .midClose:hover, .rightClose:hover {
+  cursor: pointer;
+  color: red;
+  transition: all 500ms;
+}
+
+
+.desButton {
+  background: cyan;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.nurseryButton {
+  background: green;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.walkersButton {
+  background: #800020;
+  border: 0.2em solid white;
+  border-radius: 2em;  
+}
+
+.carRiderButton {
+  background: #FC03D2  ;  
+  border: 0.2em solid white;
+  border-radius: 2em;
+  color: white;
+}
+
+.twoThreeButton {
+  background: #a64dff;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.fourFiveButton {
+  background: #a64dff; 
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.fc1Button {
+  background: #000000;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.fc2Button {
+  background: #000000;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus309Button {
+  background: red;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus307Button {
+  background:pink;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus306Button {
+  background: silver; 
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus305Button {
+  background: darkblue; 
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus308Button {
+  background: tan;
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.bus304Button {
+  background: #ffcc00;  
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.btbButton {
+  background: #008080;  
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+.campusKidsButton {
+  background: #EE7600;  
+  border: 0.2em solid white;
+  border-radius: 2em;
+}
+
+
+.leftButtons, .midButtons, .rightButtons {
+    width: 5.6%;
+    margin: 0;
+    padding: 0 .25%;
+    height: 2.5em;
+    color: white;
+    text-decoration: none;
+    font-size: .5em;
+    border-radius: 0.3em;
+    border: 0.1em solid white;
+    display: inline-block;
+    transition: all 150ms ease-in-out;
+}
+
+.leftButtonsBlack 
+
+.leftButtons:focus, .midButtons:focus, .rightButtons:focus {
+  outline: none;
+}
+
+.leftButtons:hover, .midButtons:hover, .rightButtons:hover{
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+footer {
+  height: 2.5em;
+}
+
+/*Car Dismissal Styles*/
+
+#objMargin {
+  margin-top: 5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+.formBox {
+ text-align: center;
+	margin-top: 2.4em;
+}
+
+.carNumberInput {
+  font-family: "Lato", Helvetica, Sans-Serif;
+  width: 8%;
+  border: 4px solid white;
+  background: black;
+  border-radius: 0.25em;
+  resize: none;
+  margin-top: .10em;
+  margin-bottom: .10em;
+  text-align: center;
+  margin-left: .83%;
+  margin-right: .83%;
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out; 
+}
+
+
+.carNumberInput {
+  color: white;
+  font-size: 6.5em;
+}
+
+
+#resetButton {
+  color: white;
+  width: 4%;
+  font-size: .9em;
+  text-decoration: none;
+  padding: .25em .75% .4em .75%;
+  border: 0.16em solid white;
+  border-radius: 0.25em;
+  display: inline-block;
+  margin: .70em;
+  background: linear-gradient(#434c58,#5c6777);
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
+}
+
+::-webkit-input-placeholder { 
+  color:    white;
+}
+:-moz-placeholder { 
+  color:    white;
+  opacity:  1;
+}
+::-moz-placeholder { 
+  color:    white;
+  opacity:  1;
+}
+:-ms-input-placeholder { 
+  color:    white;
+}
+:placeholder-shown { 
+  color:    white;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity .75s .75s ease-in-out; 
+  opacity: 0;
+  color: orange !important;
+}
+
+.carNumberInput:focus{
+  color: white;
+  border: 4px solid orange !important;
+  -webkit-transition: all 700ms ease-in-out;
+  -moz-transition: all 700ms ease-in-out;
+  -o-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out; 
+}
+
+input:focus{
+  outline: 0;
+}
+
+.carNumberInput:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px black inset;
+  -webkit-text-fill-color: white;
+}
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
